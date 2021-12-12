@@ -142,9 +142,9 @@ main {
 }
 
 .video {
-    width: 45vw;
-    height: 25vw;
-    top: 75%;
+    width: 50vw;
+    height: 28vw;
+    top: 80%;
     right: 7%;
     position: absolute;
     z-index: 3;
@@ -235,10 +235,10 @@ footer a {
     }
 
     .video {
-        width: 40vw;
-        height: 23vw;
-        top: 67%;
-        right: 30%;
+        width: 45vw;
+        height: 25vw;
+        top: 70%;
+        right: 25%;
     }
     /* deuxième groupe de couleurs */
     .couleurs2 {
