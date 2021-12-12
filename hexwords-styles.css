@@ -355,7 +355,7 @@ footer a {
         height: 17vw;
         top: 50%;
         left: 40%;
-        z-index: -1;
+        z-index: 1;
     }
 
     .definition {
