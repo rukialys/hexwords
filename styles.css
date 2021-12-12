@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #bbaadd;
+    font-family: 'Readex Pro', sans-serif;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dossier{
+    width: 50%;
+}
+
+p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 20px;
+}
+
+a{
+    color: #8574A7;
+    text-decoration: none;
+    border: solid 2px #E5DFF2;
+    background-color:#E5DFF2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width:451px) and (max-width:1440px) {
+
+    .dossier{
+        width: 20%;
+    }
+    
+    p {
+        font-size: 2rem;
+    }
+}

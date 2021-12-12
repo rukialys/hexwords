@@ -1,0 +1,388 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(backgound-1500-1000.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+.titre {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 20px;
+}
+
+.bad {
+    height: 160px;
+    width: 160px;
+    top: 2%;
+    left: 4%;
+    font-size: 1.2rem;
+    background-color: #BBAADD;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+/* premier groupe de couleurs */
+.couleurs {
+    top: 2%;
+    right: 5%;
+    width: 50px;
+    height: 160px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.violet {
+    flex-grow: 1;
+    background-color: #BBAADD;
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.lilas {
+    flex-grow: 1;
+    background-color: #E5DFF2;
+    border: solid 1px black;
+}
+
+.violetfonce {
+    flex-grow: 1;
+    background-color: #8574A7;
+    border: solid 1px black;
+    margin-top: 10px;
+}
+/* deuxieme groupe de couleurs */
+.couleurs2 {
+    top: 75%;
+    left: 4%;
+    width: 50px;
+    height: 160px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noir {
+    flex-grow: 1;
+    background-color: black;
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.blanc {
+    flex-grow: 1;
+    background-color: white;
+    border: solid 1px black;
+}
+
+.violetfluo {
+    flex-grow: 1;
+    background-color: #472A6E;
+    border: solid 1px black;
+    margin-top: 10px;
+}
+
+.definition {
+    top: 20%;
+    left: 13%;
+    width: 70%;
+    position: absolute;
+    z-index: 2;
+}
+
+.typo {
+    width: 50%;
+    top: 42%;
+    left: 4%;
+    position: absolute;
+    z-index: 2;
+}
+
+.fleurs {
+    width: 45%;
+    top: 32%;
+    right: 11%;
+    position: absolute;
+}
+/* illustration de Maléfique */
+.maleficent {
+    width: 45%;
+    top: 50%;
+    right: 7%;
+    position: absolute;
+    z-index: 2;
+}
+
+.joker {
+    width: 45%;
+    top: 65%;
+    left: 20%;
+    position: absolute;
+    z-index: 3;
+}
+
+.video {
+    width: 45%;
+    top: 75%;
+    right: 7%;
+    position: absolute;
+    z-index: 3;
+}
+
+footer {
+    background-color: #BBAADD;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+footer p {
+    text-align: justify;
+}
+
+footer a {
+    text-decoration: none;
+    color: #472A6E;
+}
+
+.trait {
+    border-bottom: 1px solid #000;
+    padding-top: 10px;
+}
+
+@media screen and (min-width:451px) and (max-width:768px) {
+
+    .bad {
+        height: 130px;
+        width: 130px;
+        font-size: 1.1rem;
+    }
+    /* premier groupe de couleurs */
+    .couleurs {
+        top: 2%;
+        right: 4%;
+        width: 230px;
+        height: 70px;
+        flex-direction: row;
+    }
+
+    .violet {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .violetfonce {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .definition {
+        width: 45%;
+        top: 17%;
+        left: 21%;
+        z-index: 2;
+    }
+
+    .typo {
+        width: 30%;
+        top: 35%;
+        left: 9%;
+    }
+
+    .fleurs {
+        width: 30%;
+        top: 25%;
+        right: 10%;
+    }
+
+    .maleficent {
+        width: 30%;
+        top: 50%;
+        right: 5%;
+    }
+
+    .joker {
+        width: 35%;
+        top: 50%;
+        left: 25%;
+    }
+
+    .video {
+        width: 25%;
+        top: 70%;
+        right: 25%;
+    }
+    /* deuxième groupe de couleurs */
+    .couleurs2 {
+        width: 70px;
+        height: 230px;
+        top: 57%;
+        left: 5%;
+    }
+}
+
+@media screen and (min-width:769px) {
+
+
+    main {
+        max-width: 1440px;
+        height: 140vh;
+    }
+
+    .titre {
+        font-size: 5rem;
+    }
+
+    .bad {
+        height: 20vw;
+        width: 20vw;
+        top: 2%;
+        left: 3%;
+        font-size: 1.3rem;
+        z-index: 2;
+    }
+    /* on met groupe couleurs en 'none' pour ne plus voir le premier groupe de couleurs afin de faciliter l'affichage */
+    .groupecouleur {
+        display: none;
+    }
+    /*Deuxième groupe de couleurs */
+    .toutcouleurs {
+        top: 2%;
+        right: 1%;
+        max-width: 670px;
+        width: 90%;
+        height: 95px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* toutes les classes ont un '2' a la fin pour montrer que c'est le deuxieme groupe de couleurs  */
+    .violet2 {
+        width: 15%;
+        background-color: #BBAADD;
+        border: solid 1px black;
+    }
+
+    .lilas2 {
+        width: 15%;
+        background-color: #E5DFF2;
+        border: solid 1px black;
+    }
+
+    .violetfonce2 {
+        width: 15%;
+        background-color: #8574A7;
+        border: solid 1px black;
+    }
+
+    .noir2 {
+        width: 15%;
+        background-color: black;
+        border: solid 1px black;
+    }
+
+    .blanc2 {
+        width: 15%;
+        background-color: white;
+        border: solid 1px black;
+    }
+
+    .violetfluo2 {
+        width: 15%;
+        background-color: #472A6E;
+        border: solid 1px black;
+    }
+
+    .typo {
+        width: 25%;
+        max-width: 340px;
+        top: 70%;
+        z-index: 3;
+    }
+
+    .maleficent {
+        width: 25%;
+        max-width: 475px;
+        top: 45%;
+        right: 2%;
+        z-index: 2;
+    }
+
+    .fleurs {
+        width: 25%;
+        max-width: 400px;
+        top: 20%;
+        left: 15%;
+    }
+
+    .joker {
+        width: 45%;
+        max-width: 420px;
+        top: 40%;
+        left: 7%;
+        z-index: 2;
+    }
+
+    .video {
+        width: 30%;
+        max-width: 485px;
+        top: 48%;
+        left: 40%;
+        z-index: -1;
+    }
+
+    .definition {
+        width: 40%;
+        max-width: 600px;
+        top: 20%;
+        left: auto;
+        right: 4%;
+    }
+
+    footer {
+        background-color: #BBAADD;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .apropos {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .credits {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .trait {
+        border: none;
+    }
+}
