@@ -142,7 +142,8 @@ main {
 }
 
 .video {
-    width: 45%;
+    width: 45vw;
+    height: 25vw;
     top: 75%;
     right: 7%;
     position: absolute;
@@ -234,15 +235,16 @@ footer a {
     }
 
     .video {
-        width: 25%;
-        top: 70%;
-        right: 25%;
+        width: 40vw;
+        height: 23vw;
+        top: 67%;
+        right: 30%;
     }
     /* deuxième groupe de couleurs */
     .couleurs2 {
         width: 70px;
         height: 230px;
-        top: 57%;
+        top: 55%;
         left: 5%;
     }
 }
@@ -251,7 +253,6 @@ footer a {
 
 
     main {
-        max-width: 1440px;
         height: 140vh;
     }
 
@@ -350,9 +351,9 @@ footer a {
     }
 
     .video {
-        width: 30%;
-        max-width: 485px;
-        top: 48%;
+        width: 30vw;
+        height: 17vw;
+        top: 50%;
         left: 40%;
         z-index: -1;
     }
